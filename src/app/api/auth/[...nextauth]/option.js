@@ -10,7 +10,9 @@ export const option = {
     clientSecret:process.env.GITHUB_SECRET
 }),
 CredentialsProvider({
-   
+   pages:{
+        signIn:'/signin'
+      }, 
     name:'credentials',
      credentials:{
        
