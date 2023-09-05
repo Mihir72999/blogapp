@@ -3,6 +3,9 @@ import  CredentialsProvider  from 'next-auth/providers/credentials'
 import { getServerSession } from 'next-auth'
 export const option = {
     
+   pages:{
+        signIn:'/signin'
+      }, 
     providers:[
     
     GithubProvider({
@@ -10,9 +13,6 @@ export const option = {
     clientSecret:process.env.GITHUB_SECRET
 }),
 CredentialsProvider({
-   pages:{
-        signIn:'/signin'
-      }, 
     name:'credentials',
      credentials:{
        
