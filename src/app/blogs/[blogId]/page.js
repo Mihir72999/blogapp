@@ -55,11 +55,3 @@ export async function generateMetadata({ params:{blogId} }) {
         title : post.meta.title
     }
 }
-export async function getServerSideProps({params}){
-    console.log(params)
-    return {
-        props:{
-
-        }
-    }
-}
