@@ -10,7 +10,6 @@ export async function findPostByName(file){
    const data =await fetch(`https://raw.githubusercontent.com/Mihir72999/test-blogpost/main/${file}`,
    {headers:{
     Accept:'application/vnd.github+json',
-            Authorization:`Bearer ${process.env.GITHUB_TOKEN}`,
             'X-Github-Api-Version' :'2022-11-28'
    }}
    )
@@ -60,7 +59,6 @@ export async function getPostMet(){
     {
         headers:{
             Accept:'application/vnd.github+json',
-            Authorization:`Bearer ${process.env.GITHUB_TOKEN}`,
              'X-Github-Api-Version' :'2022-11-28'
             
         }
