@@ -62,7 +62,7 @@ callbacks:{
     },
     
     redirect(){
-        return '/'
+        return 'https://blogapp-three-rho.vercel.app'
     }
 }
 
