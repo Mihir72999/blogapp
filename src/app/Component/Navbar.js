@@ -76,7 +76,7 @@ return(
     <AiOutlineMenu  size={22} fill="#fff"/>
     }
     </div>
-<div className={classes( isMenu ? 'flex' : 'hidden' ,` lg:hidden w-full flex-col list-none gap-2  py-2`)}>
+<div className={classes( isMenu ? 'flex' : 'hidden' ,` lg:hidden w-full flex-col list-none gap-2 px-1 py-2`)}>
    <div>
     {data.map(menu =>(
         <li className="hover:bg-slate-600 hover:border  hover:rounded-md py-3  px-4" key={menu.name}>{menu.name}</li>
