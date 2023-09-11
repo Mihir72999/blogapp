@@ -100,13 +100,13 @@ return(
       {users}
    </div>) : link }
     </div> 
-    <div className={classes(account ? 'lg:flex' : 'lg:hidden', 'hidden absolute border bg-white rounded-md hover:cursor-pointer right-[130px]  gap-2 flex-col px-12 py-3 list-none')}>
+    <div className={classes(account ? 'lg:flex' : 'lg:hidden', 'hidden absolute border bg-white rounded-md  right-[130px]  gap-2 flex-col px-12 py-3 list-none')}>
     {session && <> 
     <sup className="mt-4">{session?.name}</sup> 
     <sub className="mb-2">{session?.email}</sub>
     </>}
       <hr/>
-    <li onClick={()=>signOut()}>signOut</li>
+    <li className='hover:cursor-pointer' onClick={()=>signOut()}>signOut</li>
         </div>    
     </>      
 )
