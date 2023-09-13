@@ -37,7 +37,7 @@ CredentialsProvider({
     console.log('credential' , credentails)
         const user =  {id:"42" , name:"mihir72999" , password:"mihir72999" , image:'https://avatars.githubusercontent.com/u/111626217?v=4' , email:credentails?.email}
         if(!credentails.password || !credentails.email || !credentails.password){
-            console.log('invalid credentials')
+         return "invalid credential"
         }
         if(credentails?.username === user.name && credentails?.password === user.password){
             return user
@@ -62,7 +62,7 @@ callbacks:{
     },
     
     redirect(){
-        return 'https://blogapp-three-rho.vercel.app'
+        return 'https://blogapp-three-rho.vercel.app/'
     }
 }
 
